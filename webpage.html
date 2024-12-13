@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+        .form-container label {
+            font-size: 16px;
+            color: #555;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #f76c6c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .form-container button:hover {
+            background: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Course Enrollment</h2>
+        <form>
+            <label for="total-students">Total Number of Students:</label>
+            <input type="number" id="total-students" name="total-students" min="1" required>
+            
+            <label for="course-code">Course Code:</label>
+            <input type="text" id="course-code" name="course-code" required>
+            
+            <label for="enrollment-year">Enrollment Year:</label>
+            <input type="number" id="enrollment-year" name="enrollment-year" min="2000" max="2100" required>
+            
+            <label for="access-date">Date to Access:</label>
+            <input type="date" id="access-date" name="access-date" required>
+            
+            <button type="submit"><a href="webattendance.html">Next</a></button>
+        </form>
+    </div>
+</body>
+</html>

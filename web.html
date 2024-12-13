@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Name</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .form-container {
+            background: rgb(246, 244, 244);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(4, 3, 4, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #090909;
+            font-size: 24px;
+        }
+        .form-container label {
+            font-size: 18px;
+            color: #555;
+        }
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cae808;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        .form-container input[type="text"]:focus {
+            border-color: #5bc80d;
+            outline: none;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #89c7f7;
+            color: rgb(11, 9, 9);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .form-container button:hover {
+            background: #68a1cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>FACULTY LOGIN</h2>
+        <form>
+            <label for="name">Enter your name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <button class="btn" type="submit" name="action"><a href="webpage.html">Submit</button></a>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col s12">
+                    <a class="btn" href="/view.html"><button type="View previous records">View previous records</button></a>
+                    <br />
+                <br />
+                    <a class="btn" href="/result.html"><button type="Check integrity of blockchain">Check intregity of blockchain</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
